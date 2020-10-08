@@ -1,0 +1,15 @@
+{
+  "name": "jsonmaps-finland",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "debDependencies": {
+    "mapshaper": "^0.5.24"
+  },
+  "scripts": {
+    "mapshaper": "./node_modules/.bin/mapshaper",
+    "build": "mapshaper ./geojson/*.geojson -o format=topojson topojson/"
+  },
+  "author": "",
+  "license": "MIT"
+}
